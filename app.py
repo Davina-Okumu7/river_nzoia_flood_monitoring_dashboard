@@ -18,9 +18,16 @@ st.title("Nzoia Floodplain Flood Monitoring Dashboard")
 # ------------------------------------------------
 # LOAD DATA
 # ------------------------------------------------
-data = pd.read_csv(
-    r"C:\Users\User\Desktop\FINAL YEAR MAPS\PROTOTYPE TRIAL\calbrated_values.csv"
-)
+from pathlib import Path
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent
+file_path = BASE_DIR / "calibrated_values.csv"
+
+df = pd.read_csv(file_path)
+#data = pd.read_csv(
+    #r"C:\Users\User\Desktop\FINAL YEAR MAPS\PROTOTYPE TRIAL\calbrated_values.csv"
+#)
 
 # ------------------------------------------------
 # LOAD FLOOD GEOJSON
