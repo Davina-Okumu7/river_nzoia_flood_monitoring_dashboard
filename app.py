@@ -27,7 +27,7 @@ st.title("Nzoia Floodplain Flood Monitoring Dashboard")
 from pathlib import Path
 import pandas as pd
 
-file_path = Path(__file__).parent / "calibrated_values.csv"
+file_path = Path(__file__).parent / "calbrated_values.csv"
 df = pd.read_csv(file_path)
 #data = pd.read_csv(
     #r"C:\Users\User\Desktop\FINAL YEAR MAPS\PROTOTYPE TRIAL\calbrated_values.csv"
