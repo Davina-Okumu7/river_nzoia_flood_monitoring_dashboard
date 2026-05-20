@@ -5,6 +5,12 @@ from streamlit_folium import st_folium
 import json
 import time
 
+import streamlit as st
+import os
+
+st.write(os.getcwd())
+st.write(os.listdir())
+
 # ------------------------------------------------
 # PAGE CONFIG
 # ------------------------------------------------
