@@ -5,11 +5,6 @@ from streamlit_folium import st_folium
 import json
 import time
 
-import streamlit as st
-import os
-
-st.write(os.getcwd())
-st.write(os.listdir())
 
 # ------------------------------------------------
 # PAGE CONFIG
@@ -230,10 +225,10 @@ with col2:
 # ------------------------------------------------
 # LIVE DATA LOOP
 # ------------------------------------------------
-for i in range(len(data)):
+for i in range(len(df)):
 
     level = float(
-        data.iloc[i]["Calibrated"]
+        df.iloc[i]["Calibrated"]
     )
 
     # --------------------------------------------
